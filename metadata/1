@@ -2,10 +2,20 @@
    "attributes" : [
       {
          "trait_type" : "level",
-         "value" : "Silver"
+         "value" : 1
+      },
+      {
+         "trait_type" : "discount",
+         "value" : "silver"
+      },
+      {
+         "display_type" : "number",
+         "trait_type" : "percentage",
+         "value" : 10
       }
    ],
     "description" : "Intuit GED token",
+    "external_url" : "https://example.com/?token_id=1",
     "image" : "https://github.com/RajeshwaryShisode/nft-mint/blob/main/images/1.jpeg",
     "name" : "nft1"
  }

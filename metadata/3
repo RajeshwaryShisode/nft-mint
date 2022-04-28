@@ -1,11 +1,21 @@
 {
-   "attributes" : [
-      {
-         "trait_type" : "level",
-         "value" : "Platinum"
-      }
-   ],
-    "description" : "Intuit GED token",
-    "image" : "https://github.com/RajeshwaryShisode/nft-mint/blob/main/images/3.jpeg",
-    "name" : "nft3"
- }
+    "attributes" : [
+       {
+          "trait_type" : "level",
+          "value" : 1
+       },
+       {
+          "trait_type" : "discount",
+          "value" : "Platinum"
+       },
+       {
+          "display_type" : "number",
+          "trait_type" : "percentage",
+          "value" : 30
+       }
+    ],
+     "description" : "Intuit GED token",
+     "external_url" : "https://example.com/?token_id=3",
+     "image" : "https://github.com/RajeshwaryShisode/nft-mint/blob/main/images/3.jpeg",
+     "name" : "nft3"
+  }

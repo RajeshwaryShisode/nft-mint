@@ -1,11 +1,21 @@
 {
-   "attributes" : [
-      {
-         "trait_type" : "level",
-         "value" : "Gold"
-      }
-   ],
-    "description" : "Intuit GED token",
-    "image" : "https://github.com/RajeshwaryShisode/nft-mint/blob/main/images/2.jpeg",
-    "name" : "nft2"
- }
+    "attributes" : [
+       {
+          "trait_type" : "level",
+          "value" : 1
+       },
+       {
+          "trait_type" : "discount",
+          "value" : "Gold"
+       },
+       {
+          "display_type" : "number",
+          "trait_type" : "percentage",
+          "value" : 20
+       }
+    ],
+     "description" : "Intuit GED token",
+     "external_url" : "https://example.com/?token_id=2",
+     "image" : "https://github.com/RajeshwaryShisode/nft-mint/blob/main/images/2.jpeg",
+     "name" : "nft2"
+  }
