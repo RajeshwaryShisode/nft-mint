@@ -2,7 +2,7 @@ const { task } = require("hardhat/config");
 const { getContract } = require("./helpers");
 const fetch = require("node-fetch");
 
-task("mint2", "Mints from the NFT contract")
+task("mint", "Mints from the NFT contract")
     .addParam("address", "The address to receive a token")
     .setAction(async function (taskArguments, hre) {
         const contract = await getContract("NFT", hre);
@@ -36,15 +36,4 @@ task("token-uri", "Fetches the token metadata for the given token ID")
 
         const metadata = await fetch(metadata_url).then(res => res.json());
         console.log(`Metadata fetch response: ${JSON.stringify(metadata, null, 2)}`);
-    });
-
-task("mint", "Mints from the NFT contract")
-    .addParam("address", "The address to receive a token")
-    .addParam("tokenuri", "The tokenURI endpoint to set")
-    .setAction(async function (taskArguments, hre) {
-        const contract = await getContract("NFT", hre);
-        const transactionResponse = await contract.createNFT(taskArguments.address, taskArguments.tokenuri, {
-            gasLimit: 500_000,
-        });
-        console.log(`Transaction Hash: ${transactionResponse.hash}`);
     });
